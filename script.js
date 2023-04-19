@@ -30,16 +30,6 @@ inquirer
     },
     {
       type: "input",
-      name: "credits",
-      message: "please list out your credits",
-    },
-    {
-      type: "input",
-      name: "liscense",
-      message: "please list out your liscence",
-    },
-    {
-      type: "input",
       name: "pic",
       message:
         "If you have added a photo to the assets folder please put the file name here",
@@ -48,6 +38,32 @@ inquirer
       type: "input",
       name: "alt",
       message: "please list the alt text for your image here",
+    },
+    {
+      type: "input",
+      name: "credits",
+      message: "please list out your credits",
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "please list the tests needed/have been done for the program",
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "please list how others can contribute to this project",
+    },
+    {
+      type: "input",
+      name: "questions",
+      message:
+        "what is the best email to reach you at if someone has questions about the project?",
+    },
+    {
+      type: "input",
+      name: "liscense",
+      message: "please list out your liscence",
     },
   ])
   .then((data) => {
@@ -75,6 +91,18 @@ ${data.usage}
 ## Credits
 
 ${data.credits}
+
+##Tests
+
+${data.tests}
+
+##How to contribute
+
+${data.contributing}
+
+## Questions
+
+If you have any questions about the project please feel free to reach me at ${data.questions}. Thank you!
 
 ## Liscense
 
