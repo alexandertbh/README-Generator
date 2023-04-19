@@ -52,7 +52,7 @@ inquirer
   ])
   .then((data) => {
     var readme = `
-# <${data.name}>
+# ${data.name}
 
 ## Description
 
